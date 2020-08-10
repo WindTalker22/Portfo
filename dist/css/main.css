@@ -96,7 +96,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/city-background.jpg);
@@ -157,7 +157,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -176,9 +176,28 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #25343c;
-    padding: 0.5rem;
-    border-bottom: #3282b8 5px solid; }
+    background: #1b262c;
+    padding: 0.5rem; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
 
 .projects {
   display: grid;
@@ -266,7 +285,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url();
+      background: url("https://ca.slack-edge.com/T4JUEB3ME-UP9L3S24D-9701e1eb285b-512");
       width: 150px;
       height: 150px; }
   .about-info {
